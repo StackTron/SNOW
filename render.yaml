@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: secret-santa-pyatigorsk
+    env: node
+    plan: free
+    buildCommand: "echo 'No build step required'"
+    startCommand: "node server.mjs"
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: "10000"
+      - key: DATA_DIR
+        value: /opt/render/project/src/data
+    disk:
+      name: data
+      mountPath: /opt/render/project/src/data
+      sizeGB: 1

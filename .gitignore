@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+
+# Database
+data/santa.sqlite
+data/santa.sqlite-*
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test
+test.mjs
+
+# Environment
+.env
+.env.local
+.env.production
